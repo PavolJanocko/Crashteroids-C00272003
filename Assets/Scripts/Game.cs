@@ -44,9 +44,9 @@ public class Game : MonoBehaviour
     [SerializeField] private Text scoreText;
     [SerializeField] private GameObject titleText;
     [SerializeField] private Spawner spawner;
-    [SerializeField] private GameObject fullHeart1;
-    [SerializeField] private GameObject fullHeart2;
-    [SerializeField] private GameObject fullHeart3;
+    [SerializeField] public GameObject fullHeart1;
+    [SerializeField]  GameObject fullHeart2;
+    [SerializeField]  GameObject fullHeart3;
 
     private static Game instance;
 
@@ -88,6 +88,8 @@ public class Game : MonoBehaviour
         instance.fullHeart1.SetActive(true);
         instance.fullHeart2.SetActive(true);
         instance.fullHeart3.SetActive(true);
+
+
     }
 
     public static void AsteroidDestroyed()
